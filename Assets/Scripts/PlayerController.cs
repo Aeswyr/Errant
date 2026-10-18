@@ -4,6 +4,7 @@ public class PlayerController : EntityController
 {
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private MovementHandler move;
     
     private InputHandler input; 
     private bool guarding, acting, moving, forceGuarding;
@@ -24,10 +25,21 @@ public class PlayerController : EntityController
         guarding = false;
         moving = false;
 
-        if (!acting && input.move.down) {
+    if (!acting && !input.guard.down) {
+        if (input.move.pressed) {
             UpdateFlip();
+            move.StartAcceleration(input.dir);
             moving = true;
+        } else if (input.move.down)
+        {
+            UpdateFlip();
+            move.UpdateMovement(input.dir);
+            moving = true;
+        } else if (input.move.released)
+        {
+            move.StartDeceleration();
         }
+    }
 
         if ((!acting || cancellable) && input.special.pressed)
         {
@@ -66,6 +78,8 @@ public class PlayerController : EntityController
         else if (!acting && input.guard.down)
         {
             guarding = true;
+            if (move.IsMoving())
+                move.StartDeceleration();
         }
 
         animator.SetBool("guarding", guarding);
@@ -115,6 +129,7 @@ public class PlayerController : EntityController
     }
     private void StartAction()
     {
+        move.StartDeceleration();
         UpdateFlip();
         acting = true;
         cancellable = false;

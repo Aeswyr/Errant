@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class AnimatorEndAction : StateMachineBehaviour
 {
-    public override void OnStateMachineEnter(Animator animator, int stateMachinePathHash)
+    private PlayerController player;
+    public override void OnStateMachineExit(Animator animator, int stateMachinePathHash)
     {
-        animator.GetComponentInParent<PlayerController>().EndAction();
+        if (player == null)
+            player = animator.GetComponentInParent<PlayerController>();
+        player.EndAction();
     }  
 }
