@@ -9,7 +9,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (Time.time > nextArrow)
         {
-            Instantiate(arrow, 16 * Vector3.right, Quaternion.identity);
+            Instantiate(arrow, 32 * Vector3.right, Quaternion.identity);
             nextArrow = Time.time + 6;
         }
     }

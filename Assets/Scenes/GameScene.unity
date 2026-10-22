@@ -333,9 +333,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.13855422
+    y: 0
     width: 1
-    height: 0.72289157
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
-  m_AssetsPPU: 16
+  m_AssetsPPU: 8
   m_RefResolutionX: 320
   m_RefResolutionY: 180
   m_CropFrame: 2

@@ -165,15 +165,7 @@ public class PlayerController : EntityController
         return true;
     }
 
-    public void UpdateFlip()
-    {
-        if (input.dir != 0)
-        {
-            sprite.flipX = input.dir < 0;
 
-            facing = input.dir < 0 ? -1 : 1;
-        }
-    }
 
     public void EndAction()
     {
@@ -187,6 +179,7 @@ public class PlayerController : EntityController
         // allow for snap reguard after animations
         if (!acting && input.guard.down)
         {
+            UpdateFlip();
             guarding = true;
             if (move.IsMoving())
                 move.StartDeceleration();
@@ -198,7 +191,15 @@ public class PlayerController : EntityController
     {
         nextParry = Time.time + parryWindow;
     }
+    public void UpdateFlip()
+    {
+        if (input.dir != 0)
+        {
+            sprite.flipX = input.dir < 0;
 
+            facing = input.dir < 0 ? -1 : 1;
+        }
+    }
     public void SetCancellable()
     {
         cancellable = true;
