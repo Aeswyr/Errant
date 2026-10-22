@@ -333,9 +333,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.120401345
-    width: 0.7223476
-    height: 0.72240806
+    y: 0.13855422
+    width: 1
+    height: 0.72289157
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000005d0ce96a3d097f971f9ed7f0
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0

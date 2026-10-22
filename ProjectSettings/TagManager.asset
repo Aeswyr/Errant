@@ -41,5 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Entity
+    uniqueID: 1793657949
+    locked: 0
+  - name: VFX
+    uniqueID: 2541685053
+    locked: 0
+  - name: Projectile
+    uniqueID: 4040662559
+    locked: 0
   m_RenderingLayers:
   - Default

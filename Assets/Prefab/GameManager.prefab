@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8386423138473559824}
   - component: {fileID: -4164568235564094968}
+  - component: {fileID: 1325575176234291503}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,3 +46,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   arrow: {fileID: 8826733478306285250, guid: ad7c5c7fc6e0edc40a0c61232f9cc405, type: 3}
+--- !u!114 &1325575176234291503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8826733478306285250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792bc7b2087b82d46aa5cca200b7cde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VFXManager
+  template: {fileID: 8826733478306285250, guid: 2c9a62c91a26adf45a18ce8f0b6c813d, type: 3}
+  anims:
+  - {fileID: -1300594986908038686, guid: cc08db6cd7de93e46b90952e8ee86eee, type: 3}
+  - {fileID: 2016076567115708239, guid: 4d450fd09157b244ba2dfae1229e2a1d, type: 3}
+  - {fileID: 2129699680590990332, guid: 0ae8b05db6fd87d418646b38a102df9b, type: 3}
+  toastPrefab: {fileID: 0}

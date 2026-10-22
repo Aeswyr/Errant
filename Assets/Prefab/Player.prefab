@@ -174,8 +174,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1793657949
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2269460815639706287, guid: bb89ee6f460c2eb4e98f298032667997, type: 3}
@@ -274,6 +274,166 @@ MonoBehaviour:
   animator: {fileID: 4737378549692677925}
   sprite: {fileID: 1387201158583036533}
   move: {fileID: 1959517174989350284}
+  parryWindow: 0.2
+  attackSpeed: 8
+  attackCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -3.6190472
+      outSlope: -3.6190472
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.041666668
+    - serializedVersion: 3
+      time: 0.8
+      value: 0
+      inSlope: -0.00929138
+      outSlope: -0.00929138
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.42708334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  specialSpeed: 16
+  specialCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.0075503276
+      outSlope: -0.0075503276
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.40807015
+    - serializedVersion: 3
+      time: 0.6
+      value: 0
+      inSlope: -0.0032142596
+      outSlope: -0.0032142596
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.7025519
+    - serializedVersion: 3
+      time: 0.9
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dashSpeed: 18
+  dashCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -1
+      outSlope: -1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5
+      value: 0.5
+      inSlope: -1
+      outSlope: -1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  backdashSpeed: 13
+  backdashCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.009216762
+      outSlope: -0.009216762
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.34444445
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: -2
+      outSlope: -2
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  deflectSpeed: 7
+  deflectCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -27.04761
+      outSlope: -27.04761
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.041666668
+    - serializedVersion: 3
+      time: 0.1
+      value: 0
+      inSlope: 0.02721109
+      outSlope: 0.02721109
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  heavyDeflectSpeed: 15
+  heavyDeflectCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -3.9560428
+      outSlope: -3.9560428
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.07222224
+    - serializedVersion: 3
+      time: 0.7
+      value: 0
+      inSlope: -0.18274648
+      outSlope: -0.18274648
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1619046
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1959517174989350284
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private GameObject arrow;
 
@@ -10,7 +10,12 @@ public class GameManager : MonoBehaviour
         if (Time.time > nextArrow)
         {
             Instantiate(arrow, 16 * Vector3.right, Quaternion.identity);
-            nextArrow = Time.time + 10;
+            nextArrow = Time.time + 6;
         }
+    }
+
+    public Transform GetObjectParent()
+    {
+        return transform;
     }
 }
